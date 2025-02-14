@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using webRestAPI.Model.Context;
 using webRestAPI.Services;
 using webRestAPI.Services.Implementation;
 
@@ -30,6 +32,13 @@ namespace webRestAPI
         {
 
             services.AddControllers();
+
+            var connection = Configuration.GetConnectionString("SqLiteConnectionString");
+            if (string.IsNullOrEmpty(connection))
+            {
+                throw new InvalidOperationException("Connection string 'SqLiteConnectionString' not found.");
+            }
+            services.AddDbContext<SqLiteContext>(options => options.UseSqlite(connection));
             //Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();
             services.AddSwaggerGen(c =>

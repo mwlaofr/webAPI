@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `person` (
+    `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+    `adress` VARCHAR(100) NOT NULL,
+    `first_name` VARCHAR(80) NOT NULL,
+    `gender` VARCHAR(10) NOT NULL,
+    `last_name` VARCHAR(80) NOT NULL
+);
