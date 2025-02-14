@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using webRestAPI.Services;
+using webRestAPI.Services.Implementation;
 
 namespace webRestAPI
 {
@@ -28,6 +30,8 @@ namespace webRestAPI
         {
 
             services.AddControllers();
+            //Dependency Injection
+            services.AddScoped<IPersonService, PersonServiceImplementation>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "webRestAPI", Version = "v1" });

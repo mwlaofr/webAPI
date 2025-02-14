@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webAPI\\webRestAPI\\webRestAPI.csproj": {}
+    "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webRestAPI\\webRestAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webAPI\\webRestAPI\\webRestAPI.csproj": {
+    "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webRestAPI\\webRestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webAPI\\webRestAPI\\webRestAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webRestAPI\\webRestAPI.csproj",
         "projectName": "webRestAPI",
-        "projectPath": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webAPI\\webRestAPI\\webRestAPI.csproj",
+        "projectPath": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webRestAPI\\webRestAPI.csproj",
         "packagesPath": "C:\\Users\\mwlaf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webAPI\\webRestAPI\\obj\\",
+        "outputPath": "C:\\Users\\mwlaf\\Desktop\\RestAsp-NET5\\webRestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mwlaf\\AppData\\Roaming\\NuGet\\NuGet.Config"
